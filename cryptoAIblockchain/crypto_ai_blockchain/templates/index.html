@@ -2,9 +2,21 @@
 
 {% block title %}Index{% endblock %}
 
-{% block content %}
-{% for entry in blog_entries %}
-    <h2>{{ entry.title }}</h2>
-    <p>{{ entry.body }}</p>
+{% block menuItems_receptor %}
+{% for item in menuItems %}
+<div class="menuItem">
+    <a href="{{item.link}}">{{item.title}}</a>
+</div>
 {% endfor %}
+{% endblock %}
+
+{% block content %}
+<div>
+  <p>Hello there</p>
+  <p>Hello there</p>
+  <p>Hello there</p>
+  <p>Hello there</p>
+  <p>Hello there</p>
+  <p>Hello there</p>
+</div>
 {% endblock %}
